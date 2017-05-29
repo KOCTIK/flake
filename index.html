@@ -2,10 +2,7 @@
 <html lang="en-US">
 <head>
   <title>Flake</title>  
-  <meta charset="utf-8">
-  <!--
-  <link rel="stylesheet" href="style.css">
-  -->
+  <meta charset="utf-8">  
   <script type="text/javascript">
     
     var canvas = null;
@@ -54,7 +51,7 @@
     	bufferCanvasCtx.fillRect(0,0,bufferCanvasCtx.canvas.width, bufferCanvasCtx.canvas.height);
     }
 	
-	  function animate(){
+    function animate(){
     	Update();
     	Draw();
     }
@@ -76,8 +73,7 @@
     
     function Draw(){
 			
-		context.save();
-    	
+		context.save();    	
     	blanck();
     	
     	for(var i = 0; i < flakeArray.length; i++){
@@ -95,14 +91,7 @@
   </head>
  <body onload="init()">
      <canvas id="testCanvas" width="600" height="600">Canvas not suported!</canvas>
-    
- 
-       
-   
-<!--    
-<script src="js.js"></script>   
--->
-</body>
+ </body>
 </html>
 
 
